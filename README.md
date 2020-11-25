@@ -21,11 +21,13 @@ The Project is divided in the following Sections:
 
 ## Project Structure
 There are three components for this project:
+
 **1. ETL Pipeline:** load CSV files and clean the data according to the following order:
 Loads the messages and categories datasets
 Merges the two datasets
 Cleans the data
 Stores it in a SQLite database
+
 **2. ML Pipeline:** Use the machine learning pipeline to generate a supervised model that classifies the messages:
 Loads data from the SQLite database
 Splits the dataset into training and test sets
@@ -33,6 +35,7 @@ Builds a text processing and machine learning pipeline
 Trains and tunes a model using GridSearchCV
 Outputs results on the test set
 Exports the final model as a pickle file
+
 **3. Web App:** this app will show the classification of a message, so a organization can input a new disaster message and see the classification divided between 36 categories.
 
 ## Files
