@@ -36,8 +36,8 @@ Exports the final model as a pickle file
 **3. Web App:** this app will show the classification of a message, so a organization can input a new disaster message and see the classification divided between 36 categories.
 
 ## Files
-**app** contains the web application.
+**1. app** contains the web application.
 
-**data contains** the ETL pipeline (process_data.py) and the CSV input files plus the ETL pipeline output, an SQLite database.
+**2. data** contains the ETL pipeline (process_data.py) and the CSV input files plus the ETL pipeline output, an SQLite database.
 
-**models** contains the ML pipeline (train_classifier.py) with its output, i.e. a Python pickle file with the best model from testing different classifiers and parameters. That pickle file is used in the app to classify new messages. and a Python pickle file with input for some of the graphs in the app.
+**3. models** contains the ML pipeline (train_classifier.py) with its output, i.e. a Python pickle file with the best model from testing different classifiers and parameters. That pickle file is used in the app to classify new messages. and a Python pickle file with input for some of the graphs in the app.
